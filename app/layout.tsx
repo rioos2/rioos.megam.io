@@ -67,7 +67,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </Link>
           <nav className="docs-nav" aria-label="External links">
             <a href="https://megam.io">Megam Systems</a>
-            <a href="https://github.com/rioadvancement">GitHub</a>
+            <a href="https://github.com/rioos2">GitHub</a>
           </nav>
         </header>
         <div className="shell">
