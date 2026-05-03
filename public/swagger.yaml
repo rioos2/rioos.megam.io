@@ -6,7 +6,7 @@ info:
   termsOfService: https://megam.io/
   contact:
     name: Rio/OS Team
-    email: info@rio.company
+    email: nkishore@megam.io
     url: https://megam.io/
   license:
     name: Megam Systems LLP License
@@ -11267,7 +11267,7 @@ components:
                     uri:
                       type: string
                       description: "uri points to the source that will be built. The structure of the source will depend on the type of build to run"
-                      example: "https://github.com/rioadvancement/news-composer-network"
+                      example: "https://github.com/rioos2/news-composer-network"
                     reference:
                       type: string
                       description: " ref is the branch/tag/ref to build."
@@ -11526,7 +11526,7 @@ components:
                     uri:
                       type: string
                       description: "uri points to the source that will be built. The structure of the source will depend on the type of build to run"
-                      example: "https://github.com/rioadvancement/news-composer-network"
+                      example: "https://github.com/rioos2/news-composer-network"
                     reference:
                       type: string
                       description: " ref is the branch/tag/ref to build."
@@ -11814,7 +11814,7 @@ components:
                     uri:
                       type: string
                       description: "uri points to the source that will be built. The structure of the source will depend on the type of build to run"
-                      example: "https://github.com/rioadvancement/news-composer-network"
+                      example: "https://github.com/rioos2/news-composer-network"
                     reference:
                       type: string
                       description: " ref is the branch/tag/ref to build."
@@ -12106,7 +12106,7 @@ components:
                     uri:
                       type: string
                       description: "uri points to the source that will be built. The structure of the source will depend on the type of build to run"
-                      example: "https://github.com/rioadvancement/news-composer-network"
+                      example: "https://github.com/rioos2/news-composer-network"
                     reference:
                       type: string
                       description: " ref is the branch/tag/ref to build."
