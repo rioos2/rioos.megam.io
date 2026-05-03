@@ -1,0 +1,140 @@
+---
+title: Release Notes
+order: 0
+description: v2.0 Release history
+---
+## 2.0.0-rc9 : June 08, 2018 
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc9?title=2.0.0.rc9)
+
+*Features - tentative*
+
+- Build a blockchain network using Hyperledger fabric
+
+- Create a blockchain app using chaincode for insurance.
+
+- Document CI/CD with an [example project](https://github.com/rioadvancement/blockchain-demo).
+
+- Document Horizontal scaling/Vertical scaling with samples.
+
+## 2.0.0-rc8 : June 01, 2018 
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc8?title=2.0.0.rc8)
+
+*Features*
+
+- Design documentation for building a blockchain network using Hyperledger Fabric
+
+- Design documentation for creating a blockchain app using chaincode backed by blockchain network
+
+- Self healing - using node controller which updates the states of the node periodically.
+
+## 2.0.0-rc7 : May 25, 2018
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc4?title=2.0.0.rc7)
+
+*Features*
+
+- UI Infrastructure with options to edit location, virtual network.
+
+- Performance testing of Rio/OS using [rioosperf using locust.io](https://github.com/rioadvancement/rioosperf)
+
+- Find the bottlenecks in preformance of telemetry processor with an assumption of 100 users (50k http requests per second)
+
+- Test the recoverable states of containers.
+
+- Stability testing and fixes for scheduler to process jobs correctly.
+
+- Push the containers built into a private registry and process continious deploy - Good case.
+
+## 2.0.0-rc6 : May 18, 2018
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc4?title=2.0.0.rc6)
+
+*Features*
+
+- Install Rio/OS using [autorio](https://github.com/rioadvancement/autorio)
+
+- UI Infrastructure - preview.
+
+- Notification mailers moved to api server.
+
+- Horizontal scaler numbers new instances with incremental numerics
+
+- Nodelet when restarted brings up the state of digitalcloud, container to the last known state.
+
+## 2.0.0-rc5 : May 11, 2018
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc4?title=2.0.0.rc5)
+
+*Features*
+
+- CLI perform CI/CD using BuildConfig.
+
+- CLI perform clean logout by wiping off the device session.
+
+- Launch containers from private registry 
+
+- Dashboard metrics - statistics of node' process metrics/disk IO.
+
+- Nodelet keeps upto date status of containers/VM by probing them periodically.
+
+## 2.0.0-rc4 : May 04, 2018
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc4?title=2.0.0.rc4)
+
+*Features*
+
+- User login from devices are tracked with multi sessions.
+- Node statistics charts of disk usage.
+- Node statistics network speed usage  selection themed.
+- Mailers for running, security are themed.
+- Qemu when resized images using unit string "M" instead of "MiB" in Ubuntu 18.04
+
+## 2.0.0-rc3 : April 27, 2018
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc31?title=2.0.0.rc3.1)
+
+*Features*
+
+- An operational view of Rio/OS with their status 
+
+## 2.0.0-rc1 : April 13, 2018
+
+- [Bugs Fixed](https://gitlab.com/groups/rioos/-/milestones/200rc13?title=2.0.0.rc1.3)
+
+*Features*
+
+- Datacenters
+
+Create locations and manage them. See [Datacenters](../datacenters) for more details.
+
+- Command Center
+
+UI to manage your datacenter. See [Command Center](../command_center) for more details.
+
+- Scaling
+
+Scale apps based telemtry criteria. See [Scaling](../scaling) for more details.
+
+- Digital Cloud, Container
+
+Deploy a digital cloud, container. [Command Center](../command_center) and [Quick Starters](../quick_starters)
+
+- Security
+
+PKI (public key infrastructure) provides a strong security across Rio OS. Refer [Security](../security)
+
+- Identity & Access
+
+Support for authentication using Password, Token, JWT, Passticket. See [security](../security)
+
+- Rio.Market
+
+Headless API that supports a curated list of applications. Sync curated apps from Rio.Marketplace into Rio OS.
+
+- CLI
+
+### Mind map Rio OS v2.0.0
+
+![Mind map Rio OS](/img/RIO_OS_XMind.jpg)
