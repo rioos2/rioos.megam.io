@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Rio/OS API
+  version: "2.0"
+  description: |
+    Placeholder spec. Replace `public/swagger.yaml` with the real Rio/OS v2
+    OpenAPI document (https://app.swaggerhub.com/apis/riocorp/rioos/2.0)
+    and the API Reference page will render it.
+servers:
+  - url: https://api.rioos.xyz
+paths:
+  /healthz:
+    get:
+      summary: Health check
+      responses:
+        "200":
+          description: OK

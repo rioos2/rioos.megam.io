@@ -5,7 +5,9 @@ import { getAllRoutes, loadPage, routeFor } from "@/lib/content";
 const SITE_URL = "https://docs.rioos.megam.io";
 
 export function generateStaticParams() {
-  return getAllRoutes();
+  return getAllRoutes().filter(
+    (r) => !(r.section === "api_reference" && r.slug === "index")
+  );
 }
 
 export async function generateMetadata({
