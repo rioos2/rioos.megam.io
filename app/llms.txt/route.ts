@@ -1,6 +1,6 @@
 import { listAllPages, routeFor } from "@/lib/content";
 
-const SITE_URL = "https://docs.rioos.megam.io";
+const SITE_URL = "https://rios.megam.io";
 
 export const dynamic = "force-static";
 
@@ -16,10 +16,10 @@ export function GET() {
   lines.push("# Rio/OS Documentation (Archived)");
   lines.push("");
   lines.push(
-    "> Archived documentation for Rio/OS, a private cloud operating system shipped by Rio"
+    "> Archived documentation for Rio/OS, a private cloud operating system shipped by Megam"
   );
   lines.push(
-    "> Advancement Inc and stewarded by Megam Systems LLP (Chennai). Active development ended"
+    "> Systems LLP (Chennai). Active development ended"
   );
   lines.push(
     "> October 2018. Package downloads (get.rioos.xyz), the customer console, and all"
@@ -36,7 +36,7 @@ export function GET() {
   lines.push("- get.rioos.xyz — package repository (offline)");
   lines.push("- console.rioos.xyz — customer console (offline)");
   lines.push("- api.rioos.xyz — API endpoints (offline)");
-  lines.push("- rio.digital, rio.company — corporate sites (offline)");
+  lines.push("- rio.digital, rio.company — legacy corporate sites (offline; succeeded by megam.io)");
   lines.push("");
   for (const [section, list] of grouped) {
     list.sort((a, b) => a.meta.order - b.meta.order);

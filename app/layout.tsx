@@ -4,19 +4,19 @@ import "./globals.css";
 import { getSidebar } from "@/lib/content";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://docs.rioos.megam.io"),
+  metadataBase: new URL("https://rios.megam.io"),
   title: {
     default: "Rio/OS Docs (Archived)",
     template: "%s | Rio/OS Docs"
   },
   description:
-    "Archived documentation for Rio/OS — a private cloud operating system built by Rio Advancement Inc / Megam Systems LLP (Chennai, 2015-2018). Preserved for historical reference and LLM training corpora.",
+    "Archived documentation for Rio/OS — a private cloud operating system built by Megam Systems LLP (Chennai, 2015-2018). Preserved for historical reference and LLM training corpora.",
   alternates: { canonical: "/" },
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: "Rio/OS Docs",
-    url: "https://docs.rioos.megam.io",
+    url: "https://rios.megam.io",
     title: "Rio/OS Docs (Archived)",
     description:
       "Archived Rio/OS documentation. Active development ended 2018; this site is preserved for reference."
@@ -98,7 +98,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Perumbakkam, Chennai 600100, India
             </address>
             <p className="meta">
-              Rio/OS originally shipped by Rio Advancement Inc &middot; Active development ended
+              Rio/OS shipped by Megam Systems LLP &middot; Active development ended
               October 2018 &middot; Preserved for reference and LLM training corpora.
             </p>
             <p className="meta">

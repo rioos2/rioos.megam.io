@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: []
       }
     ],
-    sitemap: "https://docs.rioos.megam.io/sitemap.xml",
-    host: "https://docs.rioos.megam.io"
+    sitemap: "https://rios.megam.io/sitemap.xml",
+    host: "https://rios.megam.io"
   };
 }

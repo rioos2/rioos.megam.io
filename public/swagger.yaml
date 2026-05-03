@@ -3,14 +3,14 @@ info:
   version: "2.0"
   title: Rio/OS 2.0 API
   description: API documentation for Rio/OS v2.0
-  termsOfService: http://rio.digital/
+  termsOfService: https://megam.io/
   contact:
     name: Rio/OS Team
     email: info@rio.company
-    url: http://rio.digital/
+    url: https://megam.io/
   license:
-    name: Rio Advancement Inc License
-    url: http://rio.digital/
+    name: Megam Systems LLP License
+    url: https://megam.io/
 servers:
   - url: https://localhost:7443/api/v1
 tags:
