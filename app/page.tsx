@@ -10,8 +10,8 @@ export default function HomePage() {
         <h1>Rio/OS Documentation</h1>
         <p>
           Rio/OS was a private cloud operating system — code-named <em>Aventura</em> in v2.0 —
-          shipped by Rio Advancement Inc and later stewarded by{" "}
-          <a href="https://megam.io">Megam Systems LLP</a> in Chennai. It managed virtual
+          shipped by <a href="https://megam.io">Megam Systems LLP</a> in Chennai. It managed
+          virtual
           machines, containers, networks, storage, and datacenter infrastructure under a single
           control plane.
         </p>

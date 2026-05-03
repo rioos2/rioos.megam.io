@@ -43,9 +43,7 @@ There are 2 kinds strategy to choose for Rio OS customers.
 
 In this strategy, a `new copy` of the affected entity is spinned off in another node inside the same location. 
 
-<div class="callout callout--warning">
-    <p><strong>State recovered</strong>This strategy starts from the initial clean state of the entity. The delta state of the entity (or) as-is state of the entity is lost.</p> 
-</div>
+> **State recovered** — This strategy starts from the initial clean state of the entity. The delta state of the entity (or) as-is state of the entity is lost.
 
 *Example*
 
@@ -57,9 +55,7 @@ All the affected entity in `Node1` is recreated into `Node2` in Location **New Y
 
 In this strategy is on, then the clone of affected entity is spinned off in another node inside the same location. 
 
-<div class="callout callout--info">
-    <p><strong>State recovered</strong>This strategy starts from the current state of the entity. All the delta state of the entity (or) as-is state of the entity when the failure occurrs is transferred.</p> 
-</div>
+> **State recovered** — This strategy starts from the current state of the entity. All the delta state of the entity (or) as-is state of the entity when the failure occurrs is transferred.
 
 *Example*
 
@@ -71,18 +67,13 @@ All the affected entity in `Node1` is cloned into `Node2` in Location **New York
 
 To make sure the digital cloud runs rock solid with the software installed inside the digital cloud it must be deployed using one of the strategies mentioned above.
 
-<div class="callout callout--info">
-    <p><strong>Strategies supported</strong>Both <b>Recreate</b> and <b>RollingUpdate</b> strategies are supported for DigitalCloud.</p>
-    <p>After the move to the new node, the old digitalcloud entity in the failed node is removed when the failed node is healthy again.</p>
-</div>
+> **Strategies supported** — Both **Recreate** and **RollingUpdate** strategies are supported for DigitalCloud. After the move to the new node, the old digitalcloud entity in the failed node is removed when the failed node is healthy again.
 
 #### Containers & Blockchain backed apps
 
 To make sure the containers runs rock solid with the software installed inside the digital cloud it must be deployed using one of the strategies mentioned above.
 
-<div class="callout callout--warning">
-    <p><strong>Strategies supported</strong>Only <b>Recreate</b> strategy is supported for Containers at the moment.</p> <p><b>RollingUpdate</b> strategy will be supported for Containers shortly.</p> <p>After the move to the new node, the old container in the failed node is removed when the failed node is healthy again.</p> 
-</div>
+> **Strategies supported** — Only **Recreate** strategy is supported for Containers at the moment. **RollingUpdate** strategy will be supported for Containers shortly. After the move to the new node, the old container in the failed node is removed when the failed node is healthy again.
 
 ### Layer 3: Location failure
 
@@ -102,9 +93,7 @@ There are 3 kinds strategy to choose for Rio OS customers.
 
 In this strategy a `new copy` of the affected entity is spinned off in another location. 
 
-<div class="callout callout--info">
-    <p><strong>State Recovered</strong>This strategy starts from the initial clean state of the entity. The delta state of the entity (or) as-is state of the entity is lost.</p> 
-</div>
+> **State Recovered** — This strategy starts from the initial clean state of the entity. The delta state of the entity (or) as-is state of the entity is lost.
 
 *Example*
 
@@ -116,9 +105,7 @@ All the affected entity in `Node1` is recreated into `Node1` in Location **Tokyo
 
 In this strategy a `clone` of affected entity is spinned off in another location. 
 
-<div class="callout callout--info">
-    <p><strong>State Recovered</strong>This strategy starts from the current state of the entity. All the delta state of the entity (or) as-is state of the entity when the failure occurrs is transferred.</p> 
-</div>
+> **State Recovered** — This strategy starts from the current state of the entity. All the delta state of the entity (or) as-is state of the entity when the failure occurrs is transferred.
 
 *Example*
 
@@ -130,9 +117,7 @@ All the affected entity in `Node1` is cloned into `Node1` in Location **Tokyo**.
 
 Periodic backups can be pushed to an offsite backup storage. When a failure occurs, all the copies from the offsite backup are moved to the new location and recreated. 
 
-<div class="callout callout--info">
-    <p><strong>State Recovered</strong>This strategy results in data loss. The delta state since the last backup is lost.</p> 
-</div>
+> **State Recovered** — This strategy results in data loss. The delta state since the last backup is lost.
 
 *Time to recover:* `Very high (few hours) depending on bandwith`
 
@@ -140,15 +125,10 @@ Periodic backups can be pushed to an offsite backup storage. When a failure occu
 
 To make sure the digital cloud runs rock solid with the software installed inside the digital cloud it must be deployed using one of the strategies mentioned above.
 
-<div class="callout callout--info">
-    <p><strong>Strategies supported</strong>Both <b>Recreate</b> and <b>RollingUpdate</b> strategies are supported for DigitalCloud.</p>
-    <p>After the move to the new node, the old digitalcloud entity in the failed node is removed when the failed node is healthy again.</p>
-</div>
+> **Strategies supported** — Both **Recreate** and **RollingUpdate** strategies are supported for DigitalCloud. After the move to the new node, the old digitalcloud entity in the failed node is removed when the failed node is healthy again.
 
 #### Containers & Blockchain backed apps
 
 To make sure the containers runs rock solid with the software installed inside the digital cloud it must be deployed using one of the strategies mentioned above.
 
-<div class="callout callout--warning">
-    <p><strong>Strategies supported</strong>Only <b>Recreate</b> strategy is supported for Containers at the moment.</p> <p><b>RollingUpdate</b> strategy will be supported for Containers shortly.</p> <p>After the move to the new node, the old container in the failed node is removed when the failed node is healthy again.</p> 
-</div>
+> **Strategies supported** — Only **Recreate** strategy is supported for Containers at the moment. **RollingUpdate** strategy will be supported for Containers shortly. After the move to the new node, the old container in the failed node is removed when the failed node is healthy again.

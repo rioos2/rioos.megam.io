@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { listAllPages, routeFor } from "@/lib/content";
 
-const SITE_URL = "https://docs.rioos.megam.io";
+const SITE_URL = "https://rios.megam.io";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date("2018-10-01");
