@@ -1,0 +1,145 @@
+---
+title: CLI
+order: 0
+description: This section provides information to use the Rio OS cli
+---
+## CLI
+
+Command line interface for Rio/OS.
+
+<div class="callout callout--warning">
+    <p><strong>Supported platforms </strong> Linux.</p>
+</div>
+
+### Installation
+
+Go to [Rio OS CLI releases](https://github.com/rioadvancement/rioos/releases)
+
+Download  the latest. 
+
+```
+mkdir $HOME/bin
+
+wget https://github.com/rioadvancement/rioos/releases/download/2.0.0-rc3/rioos_20180427132544_Linux_amd64.tar.gz
+
+tar -xf rioos_*_Linux_amd64.tar.gz -C $HOME/bin
+
+rm rioos_*_Linux_amd64.tar.gz
+
+```
+
+#### Configuration cli.toml
+
+Create a file `$HOME/.rioos/etc/cli.toml`
+
+<div class="example">
+    $HOME/.rioos/etc/cli.toml
+</div>
+```
+api_server="https://console.rioos.xyz:7443"
+email=
+auth_token=
+```
+
+Where `api_server` is your site's  Rio OS API endpoint.
+
+###  Identity
+
+#### Signup with Rio OS
+
+```
+
+$ rioos cli new
+
+```
+
+#### Login to Rio OS
+
+```
+
+$ rioos login
+
+```
+
+Upon successful login, `rioos` cli updates $HOME/rioconfig/cli.toml with the users  `account_id`, `token` and `email`.
+
+#### Logout of Rio OS
+
+```
+
+rioos logout
+
+```
+
+### Deployment
+
+#### Deploy a digitalcloud: Ubuntu
+
+asciicinema illustrates deploying a digitalcloud
+<div class="example">    
+</div>
+
+#### List DigitalCloud
+
+<div class="example">    
+</div>
+
+#### Deploy a container: Jenkins
+
+<div class="example">    
+</div>
+
+#### Deploy a container: Nginx and scale horizontally
+
+<div class="example">    
+</div>
+
+#### Create Secret
+
+<div class="example">    
+</div>
+
+#### List Secret
+
+<div class="example">    
+</div>
+
+### Infrastructure
+
+This section is for administrators in managing the infrastructure using Rio OS.
+
+#### Create Datacenter
+
+asciinema illustrates creating a datacenter
+<div class="example">    
+</div>
+
+#### List Datacenters
+
+<div class="example">    
+</div>
+
+#### List Nodes
+
+<div class="example">    
+</div>
+
+#### List Storages
+
+<div class="example">    
+</div>
+
+#### List Networks
+
+<div class="example">    
+</div>
+
+#### List Images
+
+<div class="example">    
+</div>
+
+#### List Jobs
+
+<div class="example">    
+</div>
