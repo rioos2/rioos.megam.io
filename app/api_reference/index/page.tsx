@@ -11,20 +11,11 @@ export default function ApiReferencePage() {
   return (
     <article className="content-page page-api_reference-index api-reference">
       <h1>API Reference</h1>
-      <p>
-        Rio/OS v2 OpenAPI specification. The spec is also published on{" "}
-        <a
-          href="https://app.swaggerhub.com/apis/riocorp/rioos/2.0"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          SwaggerHub
-        </a>
-        .
-      </p>
+      <p>Rio/OS v2 OpenAPI specification, rendered from the archived spec.</p>
       <blockquote>
-        <strong>Caution</strong> — API is subject to change until 2.0 is released. This
-        documentation is archived; endpoints are no longer reachable.
+        <strong>Archived</strong> — Rio/OS active development ended in 2018. Endpoints
+        documented below are no longer reachable; this reference is preserved for
+        historical context.
       </blockquote>
       <div className="redoc-host">
         <RedocView />
