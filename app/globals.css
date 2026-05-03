@@ -470,12 +470,74 @@ a:focus-visible {
   margin: 6px 0;
 }
 
-.redoc-host {
-  margin-top: 24px;
-  border-top: 1px solid var(--border-subtle, #e5e7eb);
-  min-height: 600px;
+/* ---- API reference (Redoc) full-bleed dark theme ---- */
+
+.page-main:has(.api-reference) {
+  max-width: none;
+  padding: 32px 0 0;
 }
 
-.redoc-host .menu-content {
-  background: transparent !important;
+.api-reference > h1,
+.api-reference > p,
+.api-reference > blockquote {
+  padding-left: 32px;
+  padding-right: 32px;
+  max-width: 880px;
+}
+
+.redoc-host {
+  margin-top: 24px;
+  border-top: 1px solid var(--rule-faint);
+  min-height: 600px;
+  background: var(--canvas);
+}
+
+.redoc-host redoc,
+.redoc-host > div {
+  background: var(--canvas) !important;
+  color: var(--text-primary);
+}
+
+.redoc-host .menu-content,
+.redoc-host [role="navigation"] {
+  background: var(--canvas) !important;
+  border-right: 1px solid var(--rule-faint);
+}
+
+.redoc-host .api-content,
+.redoc-host [role="main"] {
+  background: var(--canvas) !important;
+}
+
+.redoc-host h1,
+.redoc-host h2,
+.redoc-host h3,
+.redoc-host h4,
+.redoc-host h5,
+.redoc-host p,
+.redoc-host span,
+.redoc-host li,
+.redoc-host td,
+.redoc-host th,
+.redoc-host label {
+  color: var(--text-primary) !important;
+}
+
+.redoc-host code {
+  color: var(--accent-primary) !important;
+  background: var(--canvas-elevated) !important;
+}
+
+.redoc-host pre,
+.redoc-host pre code {
+  background: var(--canvas) !important;
+  color: var(--text-primary) !important;
+}
+
+.redoc-host input,
+.redoc-host select,
+.redoc-host textarea {
+  background: var(--canvas-elevated) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--rule-faint) !important;
 }
