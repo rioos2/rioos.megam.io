@@ -132,15 +132,11 @@ Digital cloud, container and blockchain apps consume space from storage server.
 
 ISO is packed with Rio OS components that is sufficient to make a private cloud environment.
 
-<div class="callout callout--warn">
-    <p><strong>Request access</strong>Contact sales@rio.company for requesting access to the private link.</p> 
-</div>
+> **Request access** — Contact sales@rio.company for requesting access to the private link.
 
 Download the ISO from [the private link here](https://drive.google.com/drive/u/1/folders/1Be88vR2NjywQfE_cDN4-ge0x9U8V2SWa). Burn the ISO into the USB using your platform specific instructions.
 
-<div class="callout callout--info">
-    <p><strong>Installing!</strong> Insert the USB in the server. Follow the instructions and you are done.</p> 
-</div>
+> **Installing!** — Insert the USB in the server. Follow the instructions and you are done.
 
 ## Option 2: Autorio:  Recommended
 
@@ -148,9 +144,7 @@ Rio/OS comes packaged as a combination of native debs/rpm packages and  docker c
 
 ### Pre requistes
 
-<div class="callout callout--info">
-    <p><strong>Pre requisites</strong>Ruby 2.5.x installed in your workstation.</p> 
-</div>
+> **Pre requisites** — Ruby 2.5.x installed in your workstation.
 
 ### Install 
 
@@ -168,9 +162,7 @@ Rio/OS comes packaged as a combination of native debs/rpm packages and  docker c
 
 Every site has its own ip addresses. Hence a common set of variables are exported before the install.
 
-<div class="callout callout--info">
-    <p><strong>Caution</strong>exported variables are persistent in your current bash terminal only. If you open another terminal then perform the export again in the new terminal.</p> 
-</div>
+> **Caution** — exported variables are persistent in your current bash terminal only. If you open another terminal then perform the export again in the new terminal.
 
 ```
 export MY_IP_ADDRESS=192.168.2.47
@@ -243,9 +235,7 @@ sudo systemctl status docker
 
 #### Access Private Registry
 
-<div class="callout callout--warn">
-    <p><strong>Request access</strong>Contact sales@rio.company for requesting access to the private registry  CA certificate.</p> 
-</div>
+> **Request access** — Contact sales@rio.company for requesting access to the private registry CA certificate.
 
 Contact [sales](mailto::sales@rio.company) requesting access to the below link.
 
@@ -321,25 +311,15 @@ sudo yum update
 
 After successfully accessing the Rio/OS private registry. 
 
-<div class="callout callout--info">
-    <p><strong>Master IP Address</strong><code class="highlighter-rouge">$MY_IP_ADDRESS</code> contains the master ip address. In this case <code class="highlighter-rouge">192.168.2.47</code>. Replace it with the ip address of your server.
-    </p>    
-</div>
+> **Master IP Address** — `$MY_IP_ADDRESS` contains the master ip address. In this case `192.168.2.47`. Replace it with the ip address of your server.
 
-<div class="callout callout--info">
-    <p><strong>Version</strong>2.0.0-rc3 is the latest version referenced as $RIOOS_VERSION. Verify the release notes for newer versions.</p>    
-</div>
+> **Version** — 2.0.0-rc3 is the latest version referenced as `$RIOOS_VERSION`. Verify the release notes for newer versions.
 
-<div class="callout callout--warn">
-    <p><strong>Environment Variables</strong>
-    <ul>
-    <li><code class="highlighter-rouge">$DNS_ENDPOINT</code> contains the PowerDNS endpoint. In this case <code class="highlighter-rouge">http://console.rioos.xyz:8081</code>. Replace it with your ip address of your dns endpoint.</li>
-    <li><code class="highlighter-rouge">$API_SERVER</code> contains the Rio OS API Server endpoint. In this case <code class="highlighter-rouge">https://console.rioos.xyz:7443</code>. Replace it with your api server's endpoint.</li>
-    <li><code class="highlighter-rouge">$WATCH_SERVER</code> contains the Rio OS Watch Server (http2 based) endpoint. In this case <code class="highlighter-rouge">https://console.rioos.xyz:8443</code>. Replace it with your watch server's endpoint.    
-    </li>
-    </ul>
-    </p>    
-</div>
+> **Environment Variables**
+>
+> - `$DNS_ENDPOINT` contains the PowerDNS endpoint. In this case `http://console.rioos.xyz:8081`. Replace it with your ip address of your dns endpoint.
+> - `$API_SERVER` contains the Rio OS API Server endpoint. In this case `https://console.rioos.xyz:7443`. Replace it with your api server's endpoint.
+> - `$WATCH_SERVER` contains the Rio OS Watch Server (http2 based) endpoint. In this case `https://console.rioos.xyz:8443`. Replace it with your watch server's endpoint.
 
 *   Command center for Rio/OS.
 
@@ -354,11 +334,7 @@ sudo docker run -d -p $MY_IP_ADDRESS:443:8000 --name=rioosui_$RIOOS_VERSION -v $
 ```
 
 sudo docker run -d --net=host -p $MY_IP_ADDRESS:10252:10252 --name=riooscontroller_$RIOOS_VERSION -e DNS_ENDPOINT=$DNS_ENDPOINT -e API_SERVER=$API_SERVER -e WATCH_SERVER=$WATCH_SERVER -v $RIOOS_CONFIG_HOME:$RIOOS_CONFIG_HOME --restart always $RIOOS_REGISTRY/riooscontroller:$RIOOS_VERSION
-<<<<<<< HEAD
 
-=======
-
->>>>>>> origin/master
 sudo docker run -d --net=host -p $MY_IP_ADDRESS:10251:10251 --name=rioosscheduler_$RIOOS_VERSION -e API_SERVER=$API_SERVER -e WATCH_SERVER=$WATCH_SERVER -v $RIOOS_CONFIG_HOME:$RIOOS_CONFIG_HOME --restart always $RIOOS_REGISTRY/rioosscheduler:$RIOOS_VERSION
 
 ```
@@ -405,20 +381,12 @@ sudo docker run -d --net=host -p $MY_IP_ADDRESS:9090:9090 --name rioosprometheus
 
 Assign domain name to Rio/OS components, digital cloud, containers and blockchain-backed apps deployed by Rio/OS.
 
-<div class="callout callout--warn">
-    <p><strong>Pre requisites</strong>
-    <ul>
-    <li>
-    postgresql container is available and running..
-    </li>
-    <li>
-    <p>Make sure <code class="highlighter-rouge">jq</code> package for your operating sytem is installed.</p>
-    <p>Debian based: <b>sudo apt-get install jq</b></p>
-    <p>RedHat based: <b>sudo yum install -y jq</b></p>
-    </li>
-    </ul>
-    </p>    
-</div>
+> **Pre requisites**
+>
+> - postgresql container is available and running.
+> - Make sure `jq` package for your operating system is installed.
+>   - Debian based: `sudo apt-get install jq`
+>   - RedHat based: `sudo yum install -y jq`
 
 `AUTOCONF` environment variable is defined to use`PostgreSQL` backed database for PowerDNS.
 
@@ -459,19 +427,11 @@ sudo docker run -d -p $MY_IP_ADDRESS:8086:8086 --name=influxdb -v $RIOOS_HOME/in
 ```
 
 * Logs Storage plugin - Elastic Search
-<<<<<<< HEAD
 
 Yet another logs storage for Fluent Bit.
 
 ```
 
-=======
-
-Yet another logs storage for Fluent Bit.
-
-```
-
->>>>>>> origin/master
 docker run -d r$RIOOS_REGISTRY/riooselasticsearch:5.6.9
 
 ```
