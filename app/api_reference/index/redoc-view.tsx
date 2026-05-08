@@ -55,9 +55,9 @@ export default function RedocView() {
           typography: {
             fontSize: "14px",
             fontFamily:
-              "Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif",
+              "\"General Sans\", ui-sans-serif, system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif",
             headings: {
-              fontFamily: "\"Space Grotesk\", system-ui, sans-serif",
+              fontFamily: "\"Fraunces\", Georgia, serif",
               fontWeight: "600"
             },
             code: {
@@ -68,7 +68,7 @@ export default function RedocView() {
             links: {
               color: "#3df5c5",
               visited: "#3df5c5",
-              hover: "#a6ff00"
+              hover: "#3df5c5"
             }
           }
         }

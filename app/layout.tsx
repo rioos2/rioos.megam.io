@@ -62,7 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           the customer console, and all <code>rioos.xyz</code> hosts are no longer active.
         </div>
         <header className="site-header" aria-label="Site header">
-          <Link className="wordmark" href="/">
+          <Link className="wordmark glow-link" href="/">
             rio/os docs &rarr; archived
           </Link>
           <nav className="docs-nav" aria-label="External links">
